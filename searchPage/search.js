@@ -115,8 +115,8 @@ function get(res) {
         <div class="serching">
             <a href="${url}">
                 <div class="title">${title}</div>
-                <div class="contents">${contents}</div>
             </a>
+                <div class="contents">${contents}</div>
             <div class="datetime">작성일:${datetime}</div>
         </div>
         `;
