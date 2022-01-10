@@ -15,6 +15,8 @@
     
     <link rel="stylesheet" href="search.css">
     <script src="search.js" defer></script>
+
+
 </head>
 
 <body>
@@ -22,16 +24,20 @@
         <h1 class="serverTitle">KAKAO</h1>
     </section>
     <label class="serchLabel">
-        <input type="text">
-        <button><i class="fas fa-hand-point-up"></i></button>
+        <form action="search.html" method="GET">
+            <input type="text" placeholder="검색어 입력" name="query">
+        </form>
     </label>
+
+
+
     <nav class="navi">
         <ul class="naviUl">
-            <li><a href="#">통합검색</a></li>
-            <li class="video"><a href="#">동영상</a></li>
-            <li><a href="#">이미지</a></li>
-            <li><a href="#">블로그</a></li>
-            <li><a href="#">카페</a></li>
+            <li><a class="search" href="#">통합검색</a></li>
+            <li><a class="video" href="#">동영상</a></li>
+            <li><a class="img" href="#">이미지</a></li>
+            <li><a class="blog" href="#">블로그</a></li>
+            <li><a class="cafe" href="#">카페</a></li>
         </ul>
     </nav>
     <ul id="searchUl">
