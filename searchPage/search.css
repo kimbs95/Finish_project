@@ -1,0 +1,203 @@
+* {
+    color: rgb(232, 233, 229);
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    outline: none
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+body {
+    background: #202125;
+    width: 1903px;
+    height: 100em;
+    margin: 0 auto;
+}
+
+/* .wrap {
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
+} */
+
+.search-result {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.img-box {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    background: #ffddcc;
+
+    width: 100%;
+    height: 3em;
+    margin: 0 0 10% 0;
+    box-sizing: border-box;
+
+    position: fixed;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 0);
+}
+
+header .logo {
+    width: fit-content;
+    position: relative;
+    left: 1%;
+    top: 10%;
+}
+
+header .logo a {
+    color: #000;
+    font-size: 2em;
+}
+
+/* header form {
+    height: 3em;
+} */
+
+header form input {
+    flex: 3;
+    color: #000;
+    width: 30em;
+    height: 65%;
+    border-radius: 30px;
+    border: none;
+    padding: 0.5em;
+    font-size: 1.4rem;
+    margin: 0.2em;
+
+    font-family: 'Gowun Batang', serif;
+
+    position: absolute;
+    left: 6%;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+/* header form input:focus {
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 50%;
+} */
+
+header .search-button {
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    border: none;
+    margin: 0.3em 0;
+    background: rgba(255, 255, 255, 0);
+
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+header .search-button i {
+    color: #000;
+}
+
+.naviUl {
+    width: 50%;
+    display: flex;
+    background: rgba(255, 0, 0, 0);
+    margin-top: 0.8%;
+
+    position: relative;
+    left: 50em;
+}
+
+.naviUl div {
+    flex: 1;
+    text-align: center;
+}
+
+.naviUl div a {
+    color: #000;
+}
+
+#searchUl {
+    margin-top: 2.54%;
+    width: 1903px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchUl.onclickImgW100vw {
+    /* margin: 0 auto;
+    background: red;
+    width: 100%; */
+}
+
+/* searching 공통 */
+
+#searchUl a * {
+    font-size: 1.3em;
+    color: #8faad5;
+    text-decoration: underline;
+}
+
+#searchUl .wrapper * {
+    margin-top: 1.5%;
+}
+
+/* 통합검색 */
+#searchUl .searching-web {
+    width: 35%;
+    height: 10em;
+    margin: 3% 50% 0% 6.3%;
+    overflow: hidden;
+}
+
+
+
+
+#searchUl .searching-web a div {}
+
+#searchUl .searching-web a img {
+    width: 100%;
+}
+
+/* 동영상검색 */
+#searchUl .searching-video {
+    width: 40%;
+    height: 25em;
+    margin: 6% 4% 0% 6%;
+    overflow: hidden;
+    background: red;
+}
+
+#searchUl .searching-video .img-box {
+    width: 50%;
+    height: 10em;
+    overflow: hidden;
+}
+
+#searchUl .searching-video .img-box img {
+    width: 100%;
+}
