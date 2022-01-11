@@ -128,7 +128,7 @@ function get(res) {
 
 
         tag += `
-        <div class="searching">
+        <div class="searching-get">
             <div class="wrapper">
                 <a href="${url}">
                     <div class="title">${title}</div>
@@ -168,7 +168,7 @@ function nav(res) {
         
 
         tag += `
-        <div style="clear:both;" class="searching">
+        <div class="searching-nav">
             <div class="wrapper">
                 <a href="${url}">
                     <div class="title">${title}</div>
@@ -204,7 +204,7 @@ function img(res) {
         } = i;
 
         tag += `
-        <div class="searching">
+        <div class="searching-img">
             <a href="${doc_url}">
                 <div class="collection">컬렉션:${collection}</div>
                 <img class="thumbnail_url" src="${thumbnail_url}">
@@ -236,7 +236,7 @@ function blog(res) {
         } = i;
 
         tag += `
-        <div class="serching">
+        <div class="serching-blog">
             <a href="${url}">
                 <div class="title">${title}</div>
                 <div class="contents">${contents}</div>
@@ -270,7 +270,7 @@ function cafe(res) {
         } = i;
 
         tag += `
-        <div class="serching">
+        <div class="serching-cafe">
             <a href="${url}">
                 <div class="cafename">카페명:${cafename}</div>
                 <div class="title">${title}</div>
@@ -307,7 +307,7 @@ function book(res) {
         } = i;
 
         tag += `
-        <div class="serching">
+        <div class="serching-book">
             <a href="${url}">
                 <img src="${thumbnail}" alt="미리보기">
                 <div class="title">${title}</div>

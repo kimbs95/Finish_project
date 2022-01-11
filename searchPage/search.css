@@ -169,9 +169,15 @@ header .search-button i {
 /* 통합검색 */
 #searchUl .searching-web {
     width: 35%;
-    height: 10em;
-    margin: 3% 50% 0% 6.3%;
+    height: 12em;
+    margin: 1% 50% 0% 6.3%;
     overflow: hidden;
+}
+
+#searchUl .datetime,
+#searchUl .url {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 0.8em;
 }
 
 
