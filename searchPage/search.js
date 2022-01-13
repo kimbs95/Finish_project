@@ -420,8 +420,12 @@ const imgDeleteW100p = (e) => {
         e.preventDefault();
         if (!e.target.matches('footer .bottomLinks *')) return;
         if (!(isNaN(+e.target.textContent))) {
+            let $bottomLinksChildren = [...document.querySelector('footer .bottomLinks').children];
             window.scrollTo(0, 0);
-            console.log(e.target.innerHTML);
+            for (let i = 1, j = $bottomLinksChildren.length; i < j - 1; i++) {
+                $bottomLinksChildren[i].classList.remove('b');
+            }
+            e.target.classList.add('b')
             if ([...document.querySelector('#searchUl').children].includes(document.querySelector('.searching-web'))) {
                 getQueryInURL(usp.get('query'), e.target.textContent);
             } else if ([...document.querySelector('#searchUl').children].includes(document.querySelector('.searching-video'))) {

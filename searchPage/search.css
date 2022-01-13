@@ -323,3 +323,9 @@ footer .bottomLinks {
 footer .bottomLinks div {
     flex: 1;
 }
+
+footer .bottomLinks div.b {
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 0.6em;
+}
