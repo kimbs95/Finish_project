@@ -29,12 +29,10 @@ body {
     margin: 0 auto;
 }
 
-/* .wrap {
-    width: 80%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: auto;
-} */
+.wrap {
+    width: 100%;
+    position: relative;
+}
 
 .search-result {
     width: 100px;
@@ -174,7 +172,6 @@ header .search-button i {
     width: 35%;
     height: 12em;
     margin: 1% 50% 0% 6.3%;
-    overflow: hidden;
 }
 
 #searchUl .datetime,
@@ -182,9 +179,6 @@ header .search-button i {
     color: rgba(255, 255, 255, 0.74);
     font-size: 0.8em;
 }
-
-
-
 
 #searchUl .searching-web a div {}
 
@@ -243,6 +237,8 @@ header .search-button i {
 
     position: fixed;
     right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .wrap>.wrapper>.aboutImg .img-box {
@@ -250,7 +246,7 @@ header .search-button i {
 
     position: relative;
     left: 50%;
-    transform: translate(-50%, 00%);
+    transform: translate(-50%, 0%);
 
 }
 
@@ -261,38 +257,69 @@ header .search-button i {
 /* 블로그 검색 */
 
 #searchUl .searching-blog {
-    margin:3% 3%;
+    margin: 3% 3%;
 }
 
-#searchUl .searching-blog .title{
+#searchUl .searching-blog .title {
     font-size: 1.2em;
     font-weight: 700;
 }
 
-#searchUl .searching-blog img{
+#searchUl .searching-blog .img-box {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
     float: left;
-    margin-right: 2%;
+    margin-right: 1%;
 }
-#searchUl .searching-blog .contents{
+
+#searchUl .searching-blog .contents {
     width: 50%;
 }
-#searchUl .searching-blog .datetime{
+
+#searchUl .searching-blog .datetime {
     margin-left: 9%;
 }
 
 /* 카페 검색 */
 
 #searchUl .searching-cafe {
-    margin:2% 30% 2% 4%;
+    margin: 2% 30% 2% 4%;
+    width: 45%;
 }
-#searchUl .searching-cafe .title{
+
+#searchUl .searching-cafe a {}
+
+#searchUl .searching-cafe .title {
     font-size: 1.2em;
     font-weight: 700;
 }
-#searchUl .searching-cafe img{
+
+#searchUl .searching-cafe img {
     float: left;
     margin-right: 2%;
 }
-#searchUl .searching-cafe .contents{
+
+#searchUl .searching-cafe .contents {
     width: 80%;
+}
+
+/* footer */
+
+/* bottomlinks */
+footer {
+    width: 50%;
+    height: 1vh;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer .bottomLinks {
+    width: 100%;
+    display: flex;
+}
+
+footer .bottomLinks div {
+    flex: 1;
 }
